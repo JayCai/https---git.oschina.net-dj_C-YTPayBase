@@ -1,0 +1,9 @@
+<a href="<?=$sg['link']?>" target="_blank">อ๘ีพสืาณ</a>
+	 <?php
+	 $a=listquery("select * from type_pt order by paixu asc");
+	 foreach($a as $v){
+	 ?>
+	 <a href="/<?=$v['url']?>?caozuoid=pt<?=$v['id']?>"><?=$v['typename']?></a>	
+	 <?php
+	 }
+	 ?>
